@@ -39,19 +39,19 @@ class _HomePageState extends State<HomePage> {
              child: SecondaryPage(),
              type: PageTransitionType.bottomToTop)),
       child: Scaffold(
-
+        //Container para definir background
         body: Container(
-          decoration: BoxDecoration(
+          /*decoration: BoxDecoration(
             gradient: LinearGradient(
 
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
-                colors: [Colors.white, Colors.purple, ],
+                colors: [Colors.white, Color(0xff7A0BB435), ],
                 stops: [
                   0.6 , 10
                 ]
             )
-          ),
+          ),*/
           child: Center(
             child: Column(mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -78,9 +78,9 @@ class _HomePageState extends State<HomePage> {
                         Column(
                           children: [
 
-                            //Circular de tecnologia principal
+                            //Trocar icone de tecnologia principal
                             GestureDetector(
-                              onTap: () => Navigator.push(context,
+                              onLongPress: () => Navigator.push(context,
                                   PageTransition(
                                       child: FlutterPage(),
                                       type: PageTransitionType.bottomToTop)),
