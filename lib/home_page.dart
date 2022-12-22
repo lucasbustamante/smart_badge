@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:smart_badge/colors.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:smart_badge/const.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:smart_badge/secondary_page.dart';
 
@@ -32,9 +33,7 @@ class _HomePageState extends State<HomePage> {
     super.initState();
   }
 //TODO: criar metodo de salvamento
-  _trocarNome(){
 
-  }
 
   @override
   Widget build(BuildContext context) {
