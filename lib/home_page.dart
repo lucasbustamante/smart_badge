@@ -32,21 +32,14 @@ class _HomePageState extends State<HomePage> {
         SystemUiMode.manual, overlays: []);
     super.initState();
   }
-//TODO: criar metodo de salvamento
-
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      //atualiza a pagina
-      onTap: () => Navigator.push(context,
-          PageTransition(
-              child: HomePage(),
-              type: PageTransitionType.bottomToTop)),
       onDoubleTap: () => Navigator.push(context,
           PageTransition(
               child: SecondaryPage(),
-              type: PageTransitionType.bottomToTop)),
+              type: PageTransitionType.bottomToTop),),
       child: Scaffold(
         //Container para definir background
           body: Container(
@@ -123,104 +116,18 @@ class _HomePageState extends State<HomePage> {
                       height: 40,
                     ),
                     //Text de Nome
-                GestureDetector(
-                  onLongPress: (){
-                    showDialog(context: context, builder: (context){
-                      return AlertDialog(
-                        title: Text('Alterar nome'),
-                        content: TextField(
-                          maxLength: 25,
-                          controller: controllerNome,
-                          decoration: InputDecoration(
-                            hintText: 'Digite o nome',
-                            border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(20)
-                            ),
-                            focusedBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(20),
-
-                              borderSide: BorderSide(
-                                  color: Colors.purple
-                              ),
-                            ),
-                          ),
-                          onChanged: (text){
-
-                          },
-                        ),
-                        actions: [
-                          TextButton(onPressed: (){
-                            Navigator.pop(context);
-                            controllerNome.clear();
-                          }, child: Text('Cancelar')),
-                          TextButton(onPressed: (){
-                            setState(() {
-                              name = controllerNome.text;
-                              Navigator.pop(context);
-                              controllerNome.clear();
-                            });
-                          }, child: Text('Salvar')),
-                        ],
-
-                      );
-                    });
-                  },
-                  child: Text(name, style: TextStyle(
-                      fontWeight: FontWeight.w500,
-                      fontSize: 30
-                  ),),
-                ),
+                Text(name, style: TextStyle(
+                    fontWeight: FontWeight.w500,
+                    fontSize: 30
+                ),),
                     SizedBox(
                       height: 5,
                     ),
                     //Text de função
-                  GestureDetector(
-                    onLongPress: (){
-                      showDialog(context: context, builder: (context){
-                        return AlertDialog(
-                          title: Text('Alterar função'),
-                          content: TextField(
-                            maxLength: 30,
-                            controller: controllerFuncao,
-                            decoration: InputDecoration(
-                              hintText: 'Digite sua função',
-                              border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(20)
-                              ),
-                              focusedBorder: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(20),
-
-                                borderSide: BorderSide(
-                                    color: Colors.purple
-                                ),
-                              ),
-                            ),
-                            onChanged: (text){
-
-                            },
-                          ),
-                          actions: [
-                            TextButton(onPressed: (){
-                              Navigator.pop(context);
-                              controllerFuncao.clear();
-                            }, child: Text('Cancelar')),
-                            TextButton(onPressed: (){
-                              setState(() {
-                                funcao = controllerFuncao.text;
-                                Navigator.pop(context);
-                                controllerFuncao.clear();
-                              });
-                            }, child: Text('Salvar')),
-                          ],
-
-                        );
-                      });
-                    },
-                    child: Text(funcao, style: TextStyle(
-                        fontWeight: FontWeight.w300,
-                        fontSize: 25
-                    ),),
-                  ),
+                  Text(funcao, style: TextStyle(
+                      fontWeight: FontWeight.w300,
+                      fontSize: 25
+                  ),),
                     SizedBox(height: 80),
                     Image.asset("images/logo.png",
                       height: 150,)

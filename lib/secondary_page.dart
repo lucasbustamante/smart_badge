@@ -31,7 +31,7 @@ class _SecondaryPageState extends State<SecondaryPage> {
                     children: [
                   //Whatapp
                   ContainerNetwork(image: "whatsapp",
-                    link: "https://github.com/Lssane",
+                    link: "https://api.whatsapp.com/send?phone=5511980263200",
                     color: Colors.green,),
                   //LinkedIn
                   ContainerNetwork(
