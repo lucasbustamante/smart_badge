@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:page_transition/page_transition.dart';
 import 'package:qr_flutter/qr_flutter.dart';
-import 'package:smart_badge/home_page.dart';
-
-import '../container_pix.dart';
-import '../secondary_page.dart';
 
 class ContainerNetwork extends StatefulWidget {
 

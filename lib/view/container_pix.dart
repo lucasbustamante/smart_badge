@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'bancos.dart';
+import '../controller/bancos.dart';
 
 class ContainerPix extends StatefulWidget {
   const ContainerPix({Key? key}) : super(key: key);
@@ -29,6 +29,7 @@ class _ContainerPixState extends State<ContainerPix> {
             ],
           ),
           child: SingleChildScrollView(
+            physics: BouncingScrollPhysics(),
             child: Column(mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Padding(
@@ -50,6 +51,8 @@ class _ContainerPixState extends State<ContainerPix> {
                   logo: 'c6',),
                 Bancos(banco: '99 Pay',
                   logo: '99',),
+                Bancos(banco: 'Caixa',
+                  logo: 'caixa',),
               ],
             ),
           ),

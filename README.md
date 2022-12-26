@@ -6,11 +6,11 @@ resolvi dar início a este projeto, será o smart badge (crachá inteligente).
 
 ## TO DO
 
-- [ ] Modelagem case 3D
+- [x] Modelagem case 3D
 - [ ] Impressão 3D
 - [x] Preparar rom da placa controladora
 - [ ] Preparar novo Display
-- [ ] Criação do Design do sistema
+- [x] Criação do Design do sistema
 - [ ] Montagem da case
 
 ## Mais sobre o projeto

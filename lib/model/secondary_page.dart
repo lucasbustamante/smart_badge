@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:smart_badge/view/container_network.dart';
-import 'container_pix.dart';
+import '../view/container_pix.dart';
 
 class SecondaryPage extends StatefulWidget {
   const SecondaryPage({super.key});
@@ -42,8 +42,6 @@ class _SecondaryPageState extends State<SecondaryPage> {
                   ContainerNetwork(image: "github",
                     link: "https://github.com/LucasBustamante",
                     color: Color(0xff1e272d),),
-                  //Pix
-                  ContainerPix(),
                   //Instagram
                   ContainerNetwork(
                     image: "instagram",
@@ -53,7 +51,8 @@ class _SecondaryPageState extends State<SecondaryPage> {
                     image: "facebook",
                     link: "https://www.facebook.com/lucas.costa.739",
                     color: Color(0xff3B5997), ),
-
+//Pix
+                      ContainerPix(),
                 ])),
           )
       ],

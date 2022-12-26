@@ -1,17 +1,26 @@
 import 'package:flutter/material.dart';
-import 'package:smart_badge/qrpix.dart';
-import 'package:smart_badge/view/container_network.dart';
+import 'package:smart_badge/view/qrpix.dart';
 
-class Bancos extends StatelessWidget {
+class Bancos extends StatefulWidget {
   final String banco;
   final String logo;
 
   const Bancos({super.key, required this.banco, required this.logo});
 
   @override
+  State<Bancos> createState() => _BancosState();
+}
+
+
+
+class _BancosState extends State<Bancos> {
+
+
+  @override
   Widget build(BuildContext context) {
+
 String link2 = '';
-    switch(logo){
+    switch(widget.logo){
       case 'itau' :
         link2 = '00020126360014BR.GOV.BCB.PIX0114+55119802632005204000053039865'
             '802BR5916Lucas Bustamante6009Sao Paulo62070503***6304E380';
@@ -36,13 +45,20 @@ String link2 = '';
       case '99' :
         link2 = '00020126580014BR.GOV.BCB.PIX013692369843-daa2-4735-a3b6-a26f6'
             '06c2f935204000053039865802BR5916Lucas Bustamante6009Sao Paulo62070503***6304C022';
-        break;
+        break;case 'caixa' :
+      link2 = '00020126580014BR.GOV.BCB.PIX0136702d5119-576c-4b35-8a20-3a67cc99e'
+          'b485204000053039865802BR5916Lucas Bustamante6009Sao Paulo62070503***6304831A';
+      break;
     }
 
+
+
     return GestureDetector(
-      onLongPress: (){
+      onTap: (){
         Navigator.of(context).push(MaterialPageRoute(builder: (context) =>
             QrPix(
+              banco: widget.banco,
+              logo: widget.logo,
               link: link2,)));
       },
       child: Padding(
@@ -57,9 +73,9 @@ String link2 = '';
           ),
           child: Row(
             children: [
-              Image.asset("images/$logo.png", width: 60,),
+              Image.asset("images/${widget.logo}.png", width: 60,),
               SizedBox(width: 30),
-              Text(banco, style: TextStyle(
+              Text(widget.banco, style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.w500
               ),)

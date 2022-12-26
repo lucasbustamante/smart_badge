@@ -4,8 +4,10 @@ import 'package:qr_flutter/qr_flutter.dart';
 
 class QrPix extends StatelessWidget {
   final String link;
+  final String logo;
+  final String banco;
 
-  const QrPix({super.key, required this.link});
+  const QrPix({super.key, required this.link, required this.logo, required this.banco});
 
   @override
   Widget build(BuildContext context) {
@@ -36,9 +38,22 @@ class QrPix extends StatelessWidget {
               child: Column(mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(left: 40, right: 40, bottom: 40),
-                    child: Image.asset(
-                        "images/pix.png"
+                    padding: const EdgeInsets.only(
+                        left: 40, right: 40, bottom: 20,),
+                    child: Column(
+                      children: [
+                        Image.asset(
+                            "images/"+logo+".png",
+                          height: 65,
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 10),
+                          child: Text(banco, style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.w500
+                          ),),
+                        )
+                      ],
                     ),
                   ),
                   Container(
@@ -56,12 +71,12 @@ class QrPix extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 30,
+                    height: 20,
                   ),
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Color(0xff8df6e7),
-                        padding: EdgeInsets.all(20),
+                        padding: EdgeInsets.all(10),
                       elevation: 10,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10)
@@ -69,8 +84,8 @@ class QrPix extends StatelessWidget {
                     ),
                       onPressed: (){
                     Navigator.pop(context);
-                  }, child: Text('Voltar',style: TextStyle(
-                    fontSize: 25, color: Colors.black87
+                  }, child: Text('            voltar            ',style: TextStyle(
+                    fontSize: 25, color: Color(0xff209187)
                   ),))
                 ],
               ),

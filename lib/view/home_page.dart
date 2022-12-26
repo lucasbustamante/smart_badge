@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:smart_badge/const.dart';
-import 'package:page_transition/page_transition.dart';
-import 'package:smart_badge/infos.dart';
-import 'package:smart_badge/secondary_page.dart';
+import 'package:smart_badge/model/const.dart';
+import 'package:smart_badge/view/infos.dart';
+import 'package:smart_badge/model/secondary_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -36,11 +35,10 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onDoubleTap: () => Navigator.push(context,
-          PageTransition(
-            duration: Duration(milliseconds: 500),
-              child: SecondaryPage(),
-              type: PageTransitionType.bottomToTop),),
+      onDoubleTap: () {
+        Navigator.of(context).push(MaterialPageRoute(
+            builder: (context) =>SecondaryPage()));
+      },
       child: Scaffold(
         //Container para definir background da hone
           body: Container(
@@ -89,10 +87,9 @@ class _HomePageState extends State<HomePage> {
 
                                 //Trocar icone de tecnologia principal
                                 GestureDetector(
-                                  onLongPress: () => Navigator.push(context,
-                                      PageTransition(
-                                          child: HomePage(),
-                                          type: PageTransitionType.bottomToTop)),
+                                  onLongPress: () {
+
+                                  },
                                   child: Container(
                                     decoration: BoxDecoration(
                                         shape: BoxShape.circle,
