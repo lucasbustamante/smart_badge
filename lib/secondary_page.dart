@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:smart_badge/container_network.dart';
 import 'package:lottie/lottie.dart';
+import 'package:smart_badge/view/container_network.dart';
+import 'container_pix.dart';
 
 class SecondaryPage extends StatefulWidget {
   const SecondaryPage({super.key});
@@ -23,7 +24,6 @@ class _SecondaryPageState extends State<SecondaryPage> {
             const Padding(
             padding: EdgeInsets.symmetric(vertical: 50),
             child: DefaultTabController(
-
                 length: 6,
                 initialIndex: 2,
                 child: TabBarView(
@@ -43,12 +43,7 @@ class _SecondaryPageState extends State<SecondaryPage> {
                     link: "https://github.com/LucasBustamante",
                     color: Color(0xff1e272d),),
                   //Pix
-                  ContainerNetwork(
-                    image: "pix",
-                    link: "00020126520014BR.GOV.BCB.PIX0130lucascostabusta"
-                        "mante@gmail.com5204000053039865802BR5916Lucas Busta"
-                        "mante6009Sao Paulo62070503***6304F8B8",
-                    color: Color(0xff63e5d8), ),
+                  ContainerPix(),
                   //Instagram
                   ContainerNetwork(
                     image: "instagram",

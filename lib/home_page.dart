@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:smart_badge/const.dart';
 import 'package:page_transition/page_transition.dart';
+import 'package:smart_badge/infos.dart';
 import 'package:smart_badge/secondary_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -38,10 +38,11 @@ class _HomePageState extends State<HomePage> {
     return GestureDetector(
       onDoubleTap: () => Navigator.push(context,
           PageTransition(
+            duration: Duration(milliseconds: 500),
               child: SecondaryPage(),
               type: PageTransitionType.bottomToTop),),
       child: Scaffold(
-        //Container para definir background
+        //Container para definir background da hone
           body: Container(
             /*decoration: BoxDecoration(
             gradient: LinearGradient(
@@ -54,9 +55,13 @@ class _HomePageState extends State<HomePage> {
                 ]
             )
           ),*/
-            child: SingleChildScrollView(
-              child: Center(
-                child: Column(mainAxisAlignment: MainAxisAlignment.center,
+            child: DefaultTabController(
+              length: 2,
+              initialIndex: 0,
+              child: TabBarView(
+                physics: BouncingScrollPhysics(),
+                children: [
+                  Column(mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(height: 40),
                     Container(
@@ -133,6 +138,8 @@ class _HomePageState extends State<HomePage> {
                       height: 150,)
                   ],
                 ),
+                  Infos()
+              ]
               ),
             ),
           )

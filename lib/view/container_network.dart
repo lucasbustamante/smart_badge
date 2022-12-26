@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:page_transition/page_transition.dart';
 import 'package:qr_flutter/qr_flutter.dart';
+import 'package:smart_badge/home_page.dart';
 
-class ContainerNetwork extends StatelessWidget {
+import '../container_pix.dart';
+import '../secondary_page.dart';
+
+class ContainerNetwork extends StatefulWidget {
 
   final String image;
   final String link;
@@ -11,9 +16,18 @@ class ContainerNetwork extends StatelessWidget {
     required this.color});
 
   @override
+  State<ContainerNetwork> createState() => _ContainerNetworkState();
+}
+
+class _ContainerNetworkState extends State<ContainerNetwork> {
+
+  @override
   Widget build(BuildContext context) {
+
     return GestureDetector(
-      onDoubleTap: () => Navigator.pop(context),
+      onLongPress: () {
+
+      },
       child: Container(
         padding: EdgeInsets.symmetric(vertical: 40),
         child: Padding(
@@ -22,7 +36,7 @@ class ContainerNetwork extends StatelessWidget {
             height: 500,
             width: 300,
             decoration: BoxDecoration(
-              color: color,
+              color: widget.color,
               borderRadius: BorderRadius.circular(25),
               boxShadow: <BoxShadow>[
                 BoxShadow(
@@ -37,7 +51,7 @@ class ContainerNetwork extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(left: 40, right: 40, bottom: 40),
                   child: Image.asset(
-                      "images/"+image+".png"
+                      "images/"+widget.image+".png"
                   ),
                 ),
                 Container(
@@ -49,7 +63,7 @@ class ContainerNetwork extends StatelessWidget {
                       color: Colors.white24
                   ),
                   child: QrImage(
-                    data: link,
+                    data: widget.link,
                     errorCorrectionLevel: QrErrorCorrectLevel.H,
                     size: 250,
                   ),
@@ -67,7 +81,6 @@ class ContainerNetwork extends StatelessWidget {
                         blurRadius: 20.0,
                         color: Colors.black,
                       ),
-
                     ],
                   ),
                 )

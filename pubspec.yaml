@@ -39,9 +39,6 @@ dependencies:
   page_transition: ^2.0.9
   qr_flutter: ^4.0.0
   lottie: ^2.1.0
-  bottom_bar_fix: ^0.0.1
-  shared_preferences: ^2.0.15
-  path_provider: ^2.0.11
 
 dev_dependencies:
   flutter_test:
