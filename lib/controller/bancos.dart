@@ -54,7 +54,7 @@ String link2 = '';
 
 
     return GestureDetector(
-      onTap: (){
+      onLongPress: (){
         Navigator.of(context).push(MaterialPageRoute(builder: (context) =>
             QrPix(
               banco: widget.banco,
