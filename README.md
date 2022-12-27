@@ -15,7 +15,7 @@ resolvi dar início a este projeto, será o smart badge (crachá inteligente).
 
 ## Mais sobre o projeto
 
-O conjuto de hardware conta com uma placa mãe de um Motorola xt1068, display do mesmo aparelho,
+O conjunto de hardware conta com uma placa mãe de um Motorola xt1068, display do mesmo aparelho,
 touch e uma bateria.
 
 A rom original foi substituida por uma totalmente alterada, que irá disponibilizar melhor duração de 
