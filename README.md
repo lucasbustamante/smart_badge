@@ -41,6 +41,7 @@ A case será feita em impressão 3D
   <img src="/screenshot/3d 3.png" width="250" />
   <img src="/screenshot/3d 4.png" width="250" />
   <img src="/screenshot/3d 5.png" width="250" />
+  <img src="/screenshot/3d 6.png" width="250" />
 
 
 
