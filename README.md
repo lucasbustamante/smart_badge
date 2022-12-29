@@ -24,9 +24,11 @@ O display foi cortado para compactar tudo em menor espaço possivel
 * Placa mãe de um Motorola xt1068
 <p float="left">
   <img src="/screenshot/placa.jpg" width="250" />
+
 * Display LCD IPS 720x1280 pixels (xt1068)
 <p float="left">
   <img src="/screenshot/display.jpg" width="250" />
+
 * Bateria de 2070 mAh - íons de lítio
 <p float="left">
   <img src="/screenshot/bateria.jpg" width="250" />
