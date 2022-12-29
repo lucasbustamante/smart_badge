@@ -1,0 +1,1 @@
+mfastboot flash logo logo.bin
