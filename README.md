@@ -31,6 +31,16 @@ O projeto inicialmente terá altura de 144mm por 69mm de largura e 11mm de espes
 
 *Tamanho será trabalhado para poder ser mais compacto.
 
+### Case
+
+A case será feita em impressão 3D
+
+<p float="left">
+  <img src="/screenshot/3d 1.png" width="250" />
+  <img src="/screenshot/3d 2.png" width="250" />
+  <img src="/screenshot/3d 3.png" width="250" />
+  <img src="/screenshot/3d 4.png" width="250" />
+  <img src="/screenshot/3d 5.png" width="250" />
 
 
 
