@@ -6,8 +6,10 @@ class QrPix extends StatelessWidget {
   final String link;
   final String logo;
   final String banco;
+  final Color color;
 
-  const QrPix({super.key, required this.link, required this.logo, required this.banco});
+  const QrPix({super.key, required this.link,
+    required this.logo, required this.banco, required this.color});
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +27,7 @@ class QrPix extends StatelessWidget {
               height: 500,
               width: 300,
               decoration: BoxDecoration(
-                color: Color(0xff63e5d8),
+                color: color,
                 borderRadius: BorderRadius.circular(25),
                 boxShadow: <BoxShadow>[
                   BoxShadow(
@@ -73,19 +75,19 @@ class QrPix extends StatelessWidget {
                   SizedBox(
                     height: 20,
                   ),
-                  ElevatedButton(
+                  TextButton(
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Color(0xff8df6e7),
+                      backgroundColor: Colors.white24,
                         padding: EdgeInsets.all(10),
-                      elevation: 10,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10)
                       ),
                     ),
                       onPressed: (){
                     Navigator.pop(context);
-                  }, child: Text('            voltar            ',style: TextStyle(
-                    fontSize: 25, color: Color(0xff209187)
+                  }, child: Text('            voltar            ',
+                    style: TextStyle(
+                    fontSize: 25, color: Colors.black45
                   ),))
                 ],
               ),

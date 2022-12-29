@@ -3,6 +3,10 @@
 Inspirado após ver um [vídeo](https://www.linkedin.com/feed/update/urn:li:activity:7008065518179893250/), 
 resolvi dar início a este projeto, será o smart badge (crachá inteligente).
 
+A ideia do projeto é criar um crachá smart que poderá ser customizado independente da empresa onde trabalhar.
+O crachá contará com um segundo aplicativo, onde poderá ser feita as alterações, como trocar foto do perfil,
+trocar nome e profissão, alterar os CardsQR, e acrescentar ou remover funções.
+
 
 ## TO DO
 
@@ -12,6 +16,7 @@ resolvi dar início a este projeto, será o smart badge (crachá inteligente).
 - [ ] Preparar novo Display
 - [x] Criação do Design do sistema
 - [ ] Montagem da case
+- [ ] Criação do segundo APP
 
 ## Mais sobre o projeto
 
@@ -21,7 +26,7 @@ O display foi cortado para compactar tudo em menor espaço possivel
 
 ### Hardware
 
-* Placa mãe de um Motorola xt1068
+* Placa mãe Motorola xt1068
 <p float="left">
   <img src="/screenshot/placa.jpg" width="250" />
 
@@ -51,5 +56,27 @@ A case será feita em impressão 3D
   <img src="/screenshot/3d 5.png" width="250" />
   <img src="/screenshot/3d 6.png" width="250" />
 
+### Design
+
+Design do projeto ainda está na primeira versão, não é a versão final
+
+#### Tela inicial (frente/verso)
+<p float="left">
+  <img src="/screenshot/pag 1.png" width="250" />
+  <img src="/screenshot/pag 2.png" width="250" />
+
+#### CardsQR 
+<p float="left">
+  <img src="/screenshot/pag 3.png" width="250" />
+  <img src="/screenshot/pag 4.png" width="250" />
+  <img src="/screenshot/pag 5.png" width="250" />
+  <img src="/screenshot/pag 6.png" width="250" />
+  <img src="/screenshot/pag 7.png" width="250" />
+
+#### CardsPix
+<p float="left">
+  <img src="/screenshot/pag 8.png" width="250" />
+  <img src="/screenshot/pag 9.png" width="250" />
+  <img src="/screenshot/pag 10.png" width="250" />
 
 
