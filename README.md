@@ -15,8 +15,22 @@ resolvi dar início a este projeto, será o smart badge (crachá inteligente).
 
 ## Mais sobre o projeto
 
-O conjunto de hardware conta com uma placa mãe de um Motorola xt1068, display do mesmo aparelho,
-touch e uma bateria.
-
-A rom original foi substituida por uma totalmente alterada, que irá disponibilizar melhor duração de 
+A rom original da placa foi substituida por uma totalmente alterada, que irá disponibilizar melhor duração de 
 bateria e melhores configurações do sistema.
+O display foi cortado para compactar tudo em menor espaço possivel
+
+### Hardware
+
+* Placa mãe de um Motorola xt1068
+* Display LCD IPS 720x1280 pixels (xt1068)
+* Bateria de 2070 mAh - íons de lítio
+
+### Tamanho
+
+O projeto inicialmente terá altura de 144mm por 69mm de largura e 11mm de espessura.
+
+*Tamanho será trabalhado para poder ser mais compacto.
+
+
+
+
