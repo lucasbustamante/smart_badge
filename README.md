@@ -72,6 +72,7 @@ Design do projeto ainda está na primeira versão, não é a versão final
   <img src="/screenshot/pag 5.png" width="250" />
   <img src="/screenshot/pag 6.png" width="250" />
   <img src="/screenshot/pag 7.png" width="250" />
+  <img src="/screenshot/pag 8.png" width="250" />
 
 #### CardsPix
 <p float="left">
