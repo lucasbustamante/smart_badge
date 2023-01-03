@@ -6,7 +6,7 @@
 
 # Smart Badge
 
-Inspirado após ver um [vídeo](https://www.linkedin.com/feed/update/urn:li:activity:7008065518179893250/), 
+Inspirado após ver um [vídeo](https://twitter.com/drcoderz/status/1601592574027841537), 
 resolvi dar início a este projeto, será o smart badge (crachá inteligente).
 
 A ideia do projeto é criar um crachá smart que poderá ser customizado independente da empresa onde trabalhar.
