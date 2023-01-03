@@ -1,3 +1,10 @@
+* [Introdução](#Smart-Badge)
+* [TO DO](#TO-DO)
+* [Mais sobre o projeto](#Mais-sobre-o-projeto)
+* [Hardware](#Hardware)
+* [Case](#Case)
+* [Design](#Design)
+
 # Smart Badge
 
 Inspirado após ver um [vídeo](https://www.linkedin.com/feed/update/urn:li:activity:7008065518179893250/), 
