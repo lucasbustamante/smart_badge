@@ -1,6 +1,5 @@
 * [Introdução](#Smart-Badge)
 * [TO DO](#TO-DO)
-* [Mais sobre o projeto](#Mais-sobre-o-projeto)
 * [Hardware](#Hardware)
 * [Case](#Case)
 * [Design](#Design)
