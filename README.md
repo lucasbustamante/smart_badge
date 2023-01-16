@@ -17,7 +17,7 @@ trocar nome e profissão, alterar os CardsQR, e acrescentar ou remover funções
 ## TO DO
 
 - [x] Modelagem case 3D
-- [ ] Impressão 3D
+- [x] Impressão 3D
 - [x] Preparar rom da placa controladora
 - [ ] Preparar novo Display
 - [x] Criação do Design do sistema
