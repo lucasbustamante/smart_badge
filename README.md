@@ -21,7 +21,7 @@ trocar nome e profissão, alterar os CardsQR, e acrescentar ou remover funções
 - [x] Preparar rom da placa controladora
 - [ ] Preparar novo Display
 - [x] Criação do Design do sistema
-- [ ] Montagem da case
+- [x] Montagem da case
 - [ ] Criação do segundo APP
 
 ## Mais sobre o projeto
