@@ -23,7 +23,7 @@ trocar nome e profissão, alterar os CardsQR, e acrescentar ou remover funções
 - [x] Modelagem case 3D
 - [x] Impressão 3D
 - [x] Preparar rom da placa controladora
-- [ ] Preparar novo Display
+- [x] Preparar novo Display
 - [x] Criação do Design do sistema
 - [x] Montagem da case
 - [ ] Criação do segundo APP
