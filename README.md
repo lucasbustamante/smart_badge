@@ -4,10 +4,6 @@
 * [Case](#Case)
 * [Design](#Design)
 
-# Status
-
-Aguardando chegada da nova case 3D
-
 # Smart Badge
 
 Inspirado após ver um [vídeo](https://twitter.com/drcoderz/status/1601592574027841537), 
